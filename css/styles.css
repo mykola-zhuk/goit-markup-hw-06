@@ -757,7 +757,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.input-check {
+  transition: background-color 200ms linear;
+}
 .input-check:checked + .check-text span {
   background-color: var(--btn-hover-background-color);
   border-color: transparent;
@@ -800,6 +802,8 @@ body {
 
   width: 358px;
   height: 50px;
+
+  color: var(--first-background-color);
 }
 .subscriibe-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
