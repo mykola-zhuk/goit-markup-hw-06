@@ -671,6 +671,12 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+.modal-close-icon {
+  transition: var(--transition-value);
+}
+.modal-close:hover .modal-close-icon {
+  fill: var(--btn-hover-background-color);
+}
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -685,16 +691,20 @@ body {
 /* ----------FORM--------- */
 .modal-input {
   width: 100%;
-  height: 45px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
   padding-left: 30px;
+
+  transition: var(--transition-value);
+}
+.modal-input-icon {
+  transition: var(--transition-value);
 }
 .modal-text {
-  padding-left: 16px;
-  padding-top: 12px;
-
+  display: inline-block;
+  margin-top: 4px;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -702,6 +712,7 @@ body {
 
   resize: none;
 }
+
 .modal-text::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -714,7 +725,7 @@ body {
   fill: var(--btn-hover-background-color);
 }
 .modal-field {
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .input-wrap {
   position: relative;
@@ -726,14 +737,44 @@ body {
   transform: translateY(-50%);
 }
 .input-label {
+  display: block;
   font-size: 12px;
   color: var(--second-text-color);
+  margin-bottom: 4px;
 }
 .input-label span {
   display: block;
   margin-bottom: 4px;
 }
+.comment-field {
+  display: block;
+  margin-bottom: 20px;
+}
+.send-button {
+  display: block;
+  margin: 0 auto;
+
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--first-background-color);
+  background-color: var(--btn-hover-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 /* ----------FORM CHECKBOX--------- */
+.privacy-field {
+  width: 425px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+}
 .check-text {
   font-size: 14px;
   font-weight: 400;
@@ -773,10 +814,13 @@ body {
   color: var(--btn-hover-background-color);
   margin-left: 3px;
 }
+
 /* ----------FORM SUBSCRIBE--------- */
 .footer-subscribe-container {
   display: block;
   padding-top: 72px;
+  margin-left: 93px;
+
   margin-bottom: 20px;
 }
 .footer-subscribe-title {
@@ -798,7 +842,9 @@ body {
 }
 .subscriibe-email {
   background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  padding-left: 16px;
 
   width: 358px;
   height: 50px;
@@ -811,9 +857,14 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
-  etter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 .subscribe-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
   width: 200px;
   height: 50px;
   display: flex;
