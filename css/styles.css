@@ -534,16 +534,17 @@ body {
 }
 /* ----------SITE FOOTER---------- */
 .footeer {
+  padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--second-background-color);
 }
 .footer-adress-container {
-  margin-top: 60px;
+  margin-right: 70px;
 }
 .footer-container {
   display: flex;
-  gap: 70px;
+  align-items: baseline;
 }
 .footer-container .site-logo {
   margin-bottom: 20px;
@@ -583,7 +584,7 @@ body {
   text-decoration: none;
 }
 .footer-soc-container {
-  margin-top: 72px;
+  margin-right: 93px;
   display: inline-block;
   width: 206px;
   height: 80px;
@@ -625,6 +626,70 @@ body {
   background-color: var(--btn-hover-background-color);
 }
 .footer-soc-icon {
+  fill: var(--first-background-color);
+}
+/* ----------FORM SUBSCRIBE--------- */
+.footer-subscribe-container {
+  display: block;
+}
+.footer-subscribe-title {
+  color: var(--first-background-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.subscriibe-email {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 16px;
+
+  width: 358px;
+  height: 50px;
+
+  color: var(--first-background-color);
+}
+.subscriibe-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+.subscribe-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--btn-hover-background-color);
+  color: var(--first-background-color);
+
+  gap: 10px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.subscribe-btn span {
+}
+.subscribe-icon {
   fill: var(--first-background-color);
 }
 
@@ -725,7 +790,7 @@ body {
   fill: var(--btn-hover-background-color);
 }
 .modal-field {
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .input-wrap {
   position: relative;
@@ -747,8 +812,10 @@ body {
   margin-bottom: 4px;
 }
 .comment-field {
-  display: block;
-  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.modal-text {
+  padding: 16px;
 }
 .send-button {
   display: block;
@@ -761,6 +828,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 
   color: var(--first-background-color);
   background-color: var(--btn-hover-background-color);
@@ -813,73 +881,4 @@ body {
 .check-text a {
   color: var(--btn-hover-background-color);
   margin-left: 3px;
-}
-
-/* ----------FORM SUBSCRIBE--------- */
-.footer-subscribe-container {
-  display: block;
-  padding-top: 72px;
-  margin-left: 93px;
-
-  margin-bottom: 20px;
-}
-.footer-subscribe-title {
-  color: var(--first-background-color);
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-bottom: 20px;
-}
-.subscribe-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.subscriibe-email {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding-left: 16px;
-
-  width: 358px;
-  height: 50px;
-
-  color: var(--first-background-color);
-}
-.subscriibe-email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-}
-.subscribe-btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  width: 200px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--btn-hover-background-color);
-  color: var(--first-background-color);
-
-  gap: 10px;
-  border-radius: 4px;
-  border-color: transparent;
-}
-.subscribe-btn span {
-}
-.subscribe-icon {
-  fill: var(--first-background-color);
 }
